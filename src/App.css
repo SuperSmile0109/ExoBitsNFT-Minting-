@@ -1,0 +1,108 @@
+html, body, #root{
+	--bkgColor: #1b1b1f;
+	--txtColor: #eee;
+	--bkgColorHead: #2f2e38;
+	--txtColorHead: #eee;
+	--bkgColorCallout: #e3e3e8;
+	--heightHead: 50px;
+
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: var(--bkgColor);
+	color: var(--txtColor);
+}
+
+a{
+	color: var(--txtColor);
+}
+
+.App {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	height: var(--heightHead);
+	width: 100%;
+	flex: 0;
+}
+
+.content{
+	flex: 1;
+	margin-top: var(--heightHead);
+	padding: 2em;
+	/* overflow-x: hidden;
+	overflow-y: visible; */
+}
+
+button,
+a.button{
+	background-color: var(--txtColorHead);
+	color: var(--bkgColorHead);
+	box-shadow: inset 1px 3px 25px 0px rgb(10 18 45 / 50%);
+	font-size: inherit;
+	font-weight: bold;
+	padding: 0.5em 2em;
+	border: solid 1px var(--txtColorHead);
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/*
+		HEADER
+*/
+header{
+	background-color: var(--bkgColorHead);
+	color: var(--txtColorHead);
+	box-shadow: inset 1px 3px 25px 0px rgba(10, 18, 45, 0.5), 1px 1px 25px 0px #000;
+	z-index: 100;
+}
+
+header #logo{
+	margin: 0;
+	float:left;
+	font-size: 2em;
+	margin: 10px 1em;
+	height: 30px;
+	color: var(--txtColorHead);
+}
+
+header a{
+	color: var(--txtColorHead);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+header nav{
+	margin: 0;
+	float:right;
+}
+
+header nav ul{
+	list-style: none;
+	float:right;
+}
+
+header nav ul li{
+	float:left;
+	margin-right: 20px;
+	font-size: 1em;
+}
+
+/*
+	LOGIN
+*/
+button.login{
+	font-size: 14px;
+  margin-top: -16px;
+}
